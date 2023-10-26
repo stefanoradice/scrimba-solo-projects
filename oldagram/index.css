@@ -1,0 +1,113 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    background-color: #EDEDED;
+}
+
+header,
+section {
+    width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header,
+article {
+    background-color: #FFF;
+}
+
+/* Header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    padding: 3px 14px 10px 14px;
+}
+
+#logo {
+    width: 127px;
+}
+
+.avatar {
+    width: 34px;
+    border-radius: 50%;
+}
+
+/* Article */
+article {
+    margin-bottom: 25px;
+}
+
+.article-header {
+    padding: 10px;
+    display: flex;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.name,
+.likes,
+.username {
+    font-weight: 700;
+}
+
+.location {
+    font-size: 12px;
+}
+
+.post {
+    width: 100%;
+}
+
+footer {
+    padding: 20px 10px;
+}
+
+.actions {
+    display: flex;
+}
+
+.icon {
+    height: 23px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon:hover {
+    border-radius: 5px;
+}
+
+.icon-heart:hover {
+    background-color: #dc354588;
+}
+
+.icon-comment:hover {
+    background-color: #0dcaf088;
+}
+
+.icon-dm:hover {
+    background-color: #ffc10788;
+}
+
+.icon:not(:last-child) {
+    margin-right: 12px;
+}
+
+.comments-list,
+.likes {
+    margin-top: 12px;
+}
+
+.comments-item {
+    display: flex;
+}
+
+.username {
+    margin-right: 5px;
+}

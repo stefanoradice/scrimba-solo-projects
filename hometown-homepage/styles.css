@@ -1,0 +1,149 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #390099;
+    padding: 5px 12px;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #E9724C;
+    max-width: 412px;
+    padding: 6px 29px;
+}
+
+h3 {
+    color: #0A0903;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    color: #0A0903;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p {
+    color: #0A0903;
+    margin: 0;
+}
+
+.hero-section,
+.activities-list,
+.activities-item,
+.guide-card {
+    display: flex;
+}
+
+.hero-section,
+.activities-item {
+    flex-direction: column;
+}
+
+.hero-section {
+    height: 343px;
+    background: #fafafa url('./images/torshov.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.activities-section {
+    padding: 40px 34px;
+    background: #EDE3E9;
+}
+
+.activities-section h3 {
+    margin: 0 0 54px 0;
+}
+
+.activities-list {
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.activities-item {
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.activities-item h4 {
+    padding: 0 20px;
+    margin: 22px 0 17px 0;
+}
+
+.activities-section img {
+    border-radius: 50%;
+}
+
+.activities-item:hover {
+    background-color: #FFD23F;
+}
+
+.guide-section {
+    padding: 50px 160px;
+}
+
+.guide-card {
+    border-radius: 10px;
+    background: #FFD23F;
+    box-shadow: 0px 6px 0px 0px #1D3557;
+    padding: 23px 12px;
+    display: flex;
+    gap: 7px;
+}
+.guide-card:hover {
+    transform: translateY(-10px);
+}
+
+.guide-card img {
+    border-radius: 10px;
+    width: 180px;
+    height: auto;
+}
+
+.guide-card-info p {
+    font-style: italic;
+}
+
+.guide-card-info h4 {
+    margin: 24px 0 0 0;
+}

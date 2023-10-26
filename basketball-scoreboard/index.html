@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="timer">
+        <p>00:00</p>
+        <button onclick="addExtraTime('guest')">+15</button>
+    </div>
+    <div class="container">
+        <div class="board-box">
+            <h3 class="board-title">HOME</h3>
+            <div class="score" id="home-score">0</div>
+            <div class="add-points">
+                <button onclick="addPoint('home', 1)">+1</button>
+                <button onclick="addPoint('home', 2)">+2</button>
+                <button onclick="addPoint('home', 3)">+3</button>
+            </div>
+            <div class="add-fouls">
+                <button onclick="addFoul('home')">foul</button>
+                <span class="fouls" id="home-fouls">0</span>
+            </div>
+        </div>
+        <div class="board-box">
+            <h3 class="board-title">GUEST</h3>
+            <div class="score" id="guest-score">0</div>
+            <div class="add-points">
+                <button onclick="addPoint('guest', 1)">+1</button>
+                <button onclick="addPoint('guest', 2)">+2</button>
+                <button onclick="addPoint('guest', 3)">+3</button>
+            </div>
+            <div class="add-fouls">
+                <button onclick="addFoul('guest')">foul</button>
+                <span class="fouls" id="guest-fouls">0</span>
+            </div>
+        </div>
+    </div>
+    <button id="new-game" onclick="newGame()">NEW GAME</button>
+</body>
+
+</html>

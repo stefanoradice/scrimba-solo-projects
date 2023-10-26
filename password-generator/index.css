@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    padding: 60px;
+    font-family: Inter;
+    color: #D5D4D8;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #1F2937;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 115px 50px;
+}
+
+h1 {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    display: block;
+    color: #4ADF86;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.options div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+}
+
+.options select {
+    margin-left: 8px;
+}
+
+.options input {
+    margin-right: 8px;
+}
+
+.options input[type=checkbox]:checked {
+    accent-color: #0fa976 !important;
+}
+
+#password-length {
+    border-radius: 6px;
+    border: none;
+    padding: 3px 6px;
+}
+
+#generate-password {
+    padding: 9px 17px 9px 15px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.passwords {
+    margin-top: 35px;
+    border-top: solid 1px #2F3E53;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #55F991;
+    width: 48%;
+    height: 40px;
+    border-radius: 6px;
+    background: #273549;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#password-secure {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+#password-secure.weak {
+    background-color: #E11D48;
+}
+
+#password-secure.medium {
+    background-color: #D97706;
+}
+
+#password-secure.strong {
+    background-color: #059669;
+}

@@ -1,0 +1,122 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B1924;
+    color: #fff;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1 {
+    margin: 20px 0 0 0;
+    font-family: Josefin Sans;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 0;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 550px;
+    margin: 50px auto 0 auto;
+    padding: 0 40px;
+}
+
+.header {
+    text-align: center;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+}
+
+.message-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#message-field,
+#from-field,
+#to-field {
+    background-color: #444059;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+
+#message-field {
+    margin-top: 20px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 20px 15px;
+}
+
+#from-field,
+#to-field {
+    flex-grow: 1;
+    line-height: 40px;
+    text-align: center;
+    width: 47%;
+}
+
+#publish-button {
+    width: 100%;
+    height: 60px;
+    background: #28A9F1;
+    border-radius: 8px;
+    border: none;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.endorsements {
+    margin-top: 20px;
+}
+
+#endorsements-list {
+    margin-top: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#endorsements-list li {
+    background-color: #fff;
+    color: #1B1924;
+    padding: 15px;
+}
+
+#endorsements-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.from,
+.to,
+.likes {
+    font-weight: 700;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes {
+    cursor: pointer;
+    user-select: none;
+}

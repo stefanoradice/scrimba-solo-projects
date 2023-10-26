@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me | My Learning Journal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="index.js" ></script>
+
+</head>
+
+<body>
+    <header class="container header">
+        <div class="logo">
+            <a href="./" aria-label="Go to home page">
+                <img class="logo-icon" src="images/logo-icon.png">
+                My Learning Journal
+            </a>
+        </div>
+        <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <nav id="main-menu" >
+            <ul>
+                <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="about-me.html" aria-label="Go to About Me page">About me</a></li>
+                <li><a href="contact-me.html" aria-label="Go to Cotnact Me page">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container page">
+            <div class="contact-header">
+                <h1>Stay in touch. Send me a message now!</h1>
+                <p>Fill out the form to send a message, I will reply as soon as possible!</p>
+            </div>
+            </div>
+            <div class="page-content">
+                <form id="contact-form">
+                    <input class="fullname-field" type="text" name="fullname" required placeholder="Write here your name...">
+                    <input class="email-field" type="email" name="email" required placeholder="Write here your email address...">
+                    <input class="phone-field" type="text" name="phone" required placeholder="Write here your phone number...">
+                    <textarea class="message-field" name="message" required placeholder="Write here your message..."></textarea>
+                    <button type="submit" id="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="recent-posts">
+            <h3 class="recent-posts-title">Recent posts</h3>
+            <div class="container posts-list">
+                <article>
+                    <img class="post-image" src="images/blog-image-06.jpg">
+                    <time datetime="2022-07-23" class="post-date">JULY 23, 2022</time>
+                    <h3 class="post-title">Blog one</h3>
+                    <p class="post-excerpt">
+                        I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months
+                        of
+                        learning in the Frontend Developer Career Path.
+                    </p>
+                </article>
+                <article>
+                    <img class="post-image" src="images/blog-image-04.jpg">
+                    <time datetime="2022-07-23" class="post-date">JULY 23, 2022</time>
+                    <h3 class="post-title">Blog two</h3>
+                    <p class="post-excerpt">
+                        I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months
+                        of
+                        learning in the Frontend Developer Career Path.
+                    </p>
+                </article>
+                <article>
+                    <img class="post-image" src="images/blog-image-05.jpg">
+                    <time datetime="2022-07-23" class="post-date">JULY 23, 2022</time>
+                    <h3 class="post-title">Blog three</h3>
+                    <p class="post-excerpt">
+                        I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months
+                        of
+                        learning in the Frontend Developer Career Path.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            My Learning Journal
+            <small class="copyright">Copyright ©2022</small>
+        </div>
+    </footer>
+</body>
+
+</html>

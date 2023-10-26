@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="index.js" ></script>
+</head>
+
+<body>
+    <header class="container header">
+        <div class="logo">
+            <img class="logo-icon" src="images/logo-icon.png">
+            My Learning Journal
+        </div>
+        <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <nav id="main-menu" >
+            <ul>
+                <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="about-me.html" aria-label="Go to About Me page">About me</a></li>
+                <li><a href="contact-me.html" aria-label="Go to Cotnact Me page">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <time datetime="2022-07-23">JULY 23, 2022</time>
+                <a href="post.html" alt="go to 'new journey as a bootcamp student' post details">
+                    <h1>My new journey as a bootcamp student.</h1>
+                    <p class="hero-post-excerpt">
+                        After several months of learning in the Frontend Developer Career Path, I've made the big jump
+                        over
+                        to
+                        the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
+                    </p>
+                </a>
+            </div>
+        </section>
+        <section id="posts-list" class="container posts-list">
+            <a href="#!" id="view-more-btn" aria-label="load more posts">View More</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            My Learning Journal
+            <small class="copyright">Copyright ©2022</small>
+        </div>
+    </footer>
+</body>
+
+</html>

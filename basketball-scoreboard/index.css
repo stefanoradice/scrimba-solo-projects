@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url('fonts/CursedTimerUlil-Aznm.ttf');
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: no-drop;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+.board-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.board-title {
+    color: #EEEEEE;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.add-points {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.add-points button {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    font-family: "Cursed Timer ULiL";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.add-fouls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    color: #FB7185;
+    font-family: "Cursed Timer ULiL";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.add-fouls button {
+    border: 2px solid #FB7185;
+    color: #FB7185;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 3px 6px;
+}
+
+.add-fouls span {
+    margin-left: 10px;
+}
+
+
+.score {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: "Cursed Timer ULiL";
+    color: #F94F6D;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: solid 4px transparent;
+}
+
+.score.leader {
+    border-color: #F94F6D !important;
+}
+
+.score.winner {
+    border-color: #34D399 !important;
+    color: #34D399;
+}
+
+#new-game {
+    display: block;
+    margin: 0 auto;
+    background-color: #7C3AED;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: #EEEEEE;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#new-game:disabled {
+    background-color: #C4B5FD;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#timer p {
+    background-color: #080001;
+    color: #EEEEEE;
+    font-family: "Cursed Timer ULiL";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    border-radius: 5px;
+    padding: 10px 25px;
+    line-height: .9;
+    margin: 0;
+}
+
+#timer button {
+    border: 2px solid #34D399;
+    color: #34D399;
+    font-family: "Cursed Timer ULiL";
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 10px;
+}
