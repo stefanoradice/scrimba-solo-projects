@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-section">
+            <h1>Find your film</h1>
+            <a href="watchlist.html" title="go to my wtchlist">My watchlist</a>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <form id="search-form">
+                <input type="text" placeholder="Search for a movie" id="search-input" required>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+
+            <div class="movie-list" id="movie-list">
+
+                <article class="movie">
+                    <img src="images/blade-runner.png" alt="Blade Runner movie" class="movie-image">
+                    <div class="movie-content">
+                        <div class="movie-header">
+                            <h2>Blade Runner</h2>
+                            <div class="movie-rating">
+                                <img src="images/star-icon.svg"> 8.1
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <div class="movie-duration">
+                                117 min
+                            </div>
+                            <div class="movie-categories">
+                                Action, Drama, Sci-fi
+                            </div>
+                            <button data-id="" class="movie-action movie-add-watchlist"><img
+                                    src="images/plus-icon.svg">Watchlist</button>
+                        </div>
+                        <div class="movie-excerpt">
+                            A blade runner must pursue and terminate four replicants who stole a ship in space, and have
+                            returned to Earth to find their creator.
+                        </div>
+                    </div>
+                </article>
+
+                <div class="empty-result">
+                    <img src="images/movie-icon.svg" alt="Movie icon">
+                    Start exploring
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
