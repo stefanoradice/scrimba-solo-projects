@@ -90,10 +90,9 @@ h2 {
     background: #F9FAFB;
 }
 
-.movie-list,
-.watchlist-list {
+.movie-list {
     height: 100%;
-    padding: 2.75em 0;
+    padding: 1.5em 0 2.75em 0;
 }
 
 .empty-result {
@@ -102,7 +101,7 @@ h2 {
     color: #DFDDDD;
     font-size: 18px;
     font-weight: 700;
-    padding: 8em 0;
+    padding: 5em 0;
 }
 
 .empty-result a {
@@ -127,7 +126,7 @@ h2 {
 
 .movie {
     gap: 1.25rem;
-    padding-bottom: 1.25em;
+    padding: 1.25em 0;
     border-bottom: solid 1.5px #E5E7EB;
 }
 
@@ -143,6 +142,10 @@ h2 {
 .movie-content,
 .empty-result {
     flex-direction: column;
+}
+
+.movie-image{
+    width: 99px;
 }
 
 .movie-content {
@@ -169,7 +172,8 @@ h2 {
 }
 
 .movie-categories {
-    margin-right: 2.5em;
+    margin-right: 0.5em;
+    flex: 1;
 }
 
 .movie-excerpt {
@@ -178,9 +182,14 @@ h2 {
 }
 
 .movie-action {
-    line-height: 0;
     padding: 0;
     background: none;
     border: none;
     gap: 0.313rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.watched{
+    cursor: default;
 }
