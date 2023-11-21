@@ -1,4 +1,4 @@
-import {OMDb_api_key} from '../config.js'
+import { OMDb_api_key } from '../config.js'
 
 const searchInput = document.querySelector('#search-input')
 const searchForm = document.querySelector('#search-form')
@@ -38,7 +38,7 @@ const fetchFullMovies = async (searchText) => {
         movieList.innerHTML = renderMovieList(movies)
     } else {
         movieList.innerHTML = ''
-        renderEmptyResult('Unable to find what you’re looking for. Please try another search.')
+        renderEmptyResult(movieList)
     }
 }
 
@@ -51,8 +51,8 @@ const renderMovieList = (movies) => {
         let buttonText = '<img src="images/plus-icon.svg"> Add to watchlist'
         let buttonClass = ''
         if (watchlistData.includes(imdbID)) {
-            buttonText = 'Added to watchlist'
-            buttonClass = 'watched'
+            buttonText = watchlistList ? '<img src="images/minus-icon.svg"> Remove' : 'Added to watchlist'
+            buttonClass = watchlistList ?? 'watched'
         }
         htmlRes += `
         <article class="movie">
@@ -82,10 +82,20 @@ const renderMovieList = (movies) => {
     return htmlRes
 }
 
-const renderEmptyResult = (text) => {
-    movieList.innerHTML = `
+const renderEmptyResult = (context, text) => {
+    if (!text) {
+        if (watchlistList) {
+            text = `Your watchlist is looking a little empty...
+            <a href="index.html" class="add-movie"><img src="images/plus-icon.svg" class="add-icon">Let’s add
+                some movies!</a>`
+        } else {
+            text = `Unable to find what you’re looking for. Please try another search.`
+        }
+
+    }
+    context.innerHTML = `
     <div class="empty-result">
-        Unable to find what you’re looking for. Please try another search.
+        ${text}
     </div>`
 }
 
@@ -102,12 +112,20 @@ if (watchlistList) {
 document.addEventListener('click', (e) => {
     const dataId = e.target.dataset.id
     if (dataId) {
-        if (!watchlistData.includes(dataId)) {
+        if (!watchlistList && !watchlistData.includes(dataId)) {
             watchlistData.push(dataId)
             localStorage.setItem('watchlistData', JSON.stringify(watchlistData))
             e.target.classList.add('watched')
             e.target.querySelector('img').remove
             e.target.textContent = 'added to watchlist'
+        } else {
+            const movieToRemove = watchlistData.indexOf(dataId)
+            watchlistData.splice(movieToRemove, 1)
+            localStorage.setItem('watchlistData', JSON.stringify(watchlistData))
+            e.target.parentElement.parentElement.parentElement.remove()
+            if (watchlistData.length <= 0) {
+                renderEmptyResult(watchlistList)
+            }
         }
 
     }
