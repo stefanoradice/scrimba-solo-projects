@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p{
+    margin-bottom: 1.25em;
+}
+
+a{
+    text-decoration: none;
+    color: #F5F5F5;
+    margin-bottom: 1.5em;
+    display: block;
+}
+
+p, a{
+    font-size: 0.625rem;
+}
+
+h1{
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0.24em;
+}
+
+h2{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: #F3BF99;
+    font-size: 0.8125rem;
+    margin: 0 0 0.6923em 0;
+}
+
+h3{
+    color: #F5F5F5;
+    margin-bottom: 0.3125em;
+}
+
+body{
+    background: #23252C;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background: #1A1B21;
+    padding: 1.3125em 2.125em;
+}
+
+header{
+    border-radius: 10px 10px 0 0;
+    height: 317px;
+    background: url('./images/profile_alt-min.jpg'), lightgray no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+footer{
+    border-radius: 0px 0px 10px 10px;
+    background: #161619;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.business-card{
+    width: 317px;
+    margin: 0 auto;
+    color: #DCDCDC;
+    padding: 2.75em 0;
+}
+
+.heading{
+    text-align: center;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.6428em 0;
+    display: flex;
+    width: 115px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn--blue{
+    color: #fff;
+    background: #5093E2;
+    border: none;
+}
+
+.social-link{
+    margin: 0;
+}
