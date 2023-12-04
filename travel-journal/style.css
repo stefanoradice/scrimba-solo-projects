@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.45em;
+    color: #fff;
+    background: #F55A5A;
+    height: 55px;
+}
+
+h1{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: -1.085px;
+}
+
+.travel-journal{
+    font-family: 'Inter', sans-serif;
+    color: #2B283A;
+    max-width: 478px;
+    margin: 0 auto;
+}
+
+.card{
+    padding: 1.125em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.1875em;
+    border-bottom: solid 1px #F5F5F5;  
+}
+
+.card__image{
+    flex: 0 0 auto;
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.card__location{
+    display: flex;
+    column-gap: 0.75rem;
+    align-items: center;
+}
+
+.card__state{
+    display: flex;
+    align-items: center;
+    column-gap: 0.36em;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    letter-spacing: 1.741px;
+    line-height: 0;
+}
+
+.card__gmap{
+    color: #918E9B;
+    font-size: 0.6875rem;
+}
+
+.card__title{
+    font-size: 1.5625rem;
+    font-weight: 700;
+    margin: 0.2em 0 0.6em 0;
+}
+
+.card__date{
+    font-size: 0.6875rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.7em;
+}
+
+.card__description{
+    font-size: 0.6875rem;
+    line-height: 1.5;
+    margin: 0;
+}
