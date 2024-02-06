@@ -27,7 +27,6 @@ const renderScheme = (colors) => {
         colorDiv.setAttribute('id', hex)
         colorDiv.style.backgroundColor = hex
         resultsContainer.appendChild(colorDiv)
-        console.log(color.hex)
     }
     )
 }

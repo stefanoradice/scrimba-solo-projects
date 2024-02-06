@@ -23,6 +23,7 @@ body::after {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
+  line-height: 0;
 }
 
 h1 {
@@ -57,6 +58,16 @@ button {
   max-width: 550px;
   margin: 0 auto;
   padding: 40px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.notices {
+  text-align: center;
+  width: 100%;
 }
 
 .start {
@@ -76,7 +87,7 @@ button {
   gap: 12px;
 }
 
-.questions__item{
+.questions__item {
   border-bottom: solid 1px #DBDEF0;
   padding: 15px 0;
 }
@@ -92,17 +103,18 @@ button {
   cursor: pointer;
 }
 
-.answers__item.selected{
+.answers__item.selected {
   background-color: #D6DBF5;
   border: none;
 }
 
-.actions{
+.actions {
   padding: 20px 0;
   text-align: center;
+  height: 40px;
 }
 
-.actions button{
+.actions button {
   padding: 1em 2.2em;
   font-size: 0.625rem;
   border-radius: 10px;
