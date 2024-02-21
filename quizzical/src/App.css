@@ -24,6 +24,7 @@ body::after {
   left: 0;
   background-repeat: no-repeat;
   line-height: 0;
+  z-index: -1;
 }
 
 h1 {
