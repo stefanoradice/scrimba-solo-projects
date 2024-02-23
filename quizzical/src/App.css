@@ -104,19 +104,42 @@ button {
   cursor: pointer;
 }
 
+.answers__item.verify {
+  pointer-events: none;
+}
+
 .answers__item.selected {
   background-color: #D6DBF5;
   border: none;
 }
 
+.answers__item.correct {
+  background-color: #94D7A2;
+  border: none;
+}
+
+.answers__item.verify:not(.correct) {
+  opacity: 0.5;
+}
+
+.answers__item.selected.wrong {
+  background-color: #F8BCBC;
+  border: none;
+}
+
 .actions {
   padding: 20px 0;
-  text-align: center;
-  height: 40px;
+  font-weight: 700;
 }
 
 .actions button {
   padding: 1em 2.2em;
   font-size: 0.625rem;
   border-radius: 10px;
+}
+
+.actions .results {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
