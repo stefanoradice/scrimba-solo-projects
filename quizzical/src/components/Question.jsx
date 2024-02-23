@@ -1,3 +1,4 @@
+import he from 'he'
 export const Question = (props) => {
     const { answer, question, incorrect_answers, correct_answer } = props
     const allAnswers = incorrect_answers
@@ -7,7 +8,7 @@ export const Question = (props) => {
     let statusAnswer = ''
     return (
         <div className='questions__item'>
-            <h2>{question}</h2>
+            <h2>{he.decode(question)}</h2>
             <div className='answers__list'>
                 {allAnswers.map((currentAnswer, index) => {
                     let selected = currentAnswer === answer ? 'selected' : ''
@@ -19,7 +20,7 @@ export const Question = (props) => {
                             statusAnswer = 'wrong'
                         }
                     }
-                    return <button key={index} className={`answers__item ${selected} ${statusAnswer}`} onClick={() => props.selectAnswer(currentAnswer, question)}>{currentAnswer}</button>
+                    return <button key={index} className={`answers__item ${selected} ${statusAnswer}`} onClick={() => props.selectAnswer(currentAnswer, question)}>{he.decode(currentAnswer)}</button>
                 })}
             </div>
         </div>
